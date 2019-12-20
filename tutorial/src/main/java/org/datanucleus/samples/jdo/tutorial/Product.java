@@ -26,7 +26,7 @@ import javax.jdo.annotations.PrimaryKey;
  * Definition of a Product
  * Represents a product, and contains the key aspects of the item.
  */
-@PersistenceCapable
+//@PersistenceCapable
 public class Product
 {
     @PrimaryKey
@@ -39,6 +39,8 @@ public class Product
 
     protected double price=0.0;
 
+    public Product() {}
+    
     public Product(String name, String description, double price)
     {
         this.name = name;
